@@ -1,0 +1,40 @@
+.message {
+    display: flex;
+    align-items: flex-end;
+    margin: 10px;
+    width: fit-content;
+    background-color: chartreuse;
+
+}
+
+.text {
+    padding: 10px;
+    text-anchor: start;
+    background-color: black;
+    color: azure;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 10px;
+    border-color: blueviolet;
+
+}
+
+.time {
+    text-align: end;
+    text-decoration-color: azure;
+}
+
+.name {
+    text-anchor: start;
+    color: blueviolet;
+
+
+}
+
+
