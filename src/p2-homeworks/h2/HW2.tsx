@@ -48,8 +48,7 @@ function HW2() {
             />
 
             <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeAffairs/>*/}
+            {/*<AlternativeAffairs/> для творчества*/}
             <hr/>
         </div>
     )
