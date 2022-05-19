@@ -48,7 +48,8 @@ function HW2() {
             />
 
             <hr/>
-            {/*<AlternativeAffairs/> для творчества*/}
+            {/*<AlternativeAffairs/>
+             для творчества*/}
             <hr/>
         </div>
     )
