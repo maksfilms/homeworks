@@ -1,28 +1,34 @@
 import React, {ChangeEvent, useState} from "react"
 import Greeting from './Greeting'
+import {UserType} from "./HW3";
 
 type GreetingContainerPropsType = {
-    users: any
-    addUserCallback: any
+    users: Array<UserType>
+    addUserCallback: (name: string) => void
 }
 
-// более простой и понятный для новичков
-// function GreetingContainer(props: GreetingPropsType) {
-
 const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUserCallback}) => {
-    const [name, setName] = useState<any>('')
-    const [error, setError] = useState<any>('')
+    const [name, setName] = useState<string>('')
+    const [error, setError] = useState<string>('name is require')
 
     const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => {
-        setName(e.currentTarget.value)
-        console.log(name)
+        const trimmedName = e.currentTarget.value.trim()
+
+        if (trimmedName) {
+            setName(trimmedName)
+            setError('')
+        } else {
+            setName('')
+            setError('name is require!')
+        }
     }
+
     const addUser = () => {
         addUserCallback(name)
         alert(`Hello ${name} !`)
     }
 
-    const totalUsers = 0 // need to fix
+    const totalUsers = users.length
 
     return (
         <Greeting

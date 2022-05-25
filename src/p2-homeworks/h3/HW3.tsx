@@ -4,30 +4,25 @@ import {v1} from "uuid";
 
 
 export type UserType = {
-    _id: any
-    name: any
+    _id: string
+    name: string
 }
 
 
-// уровень работы с глобальными данными
 function HW3() {
-    const [users, setUsers] = useState<any>([]) // need to fix any
+    const [users, setUsers] = useState<Array<UserType>>([])
 
-    const addUserCallback = (name: any) => {
-        setUsers([])
+    const addUserCallback = (name: string) => {
+        setUsers([...users, {_id: v1(), name: name}])
     }
 
     return (
         <div>
             <hr/>
             homeworks 3
-
             <GreetingContainer users={users} addUserCallback={addUserCallback}/>
+            <hr/>
 
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeGreeting/>*/}
-            <hr/>
         </div>
     )
 }
