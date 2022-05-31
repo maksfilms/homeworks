@@ -1,7 +1,25 @@
-.default {
+@keyframes blink {
+    0% {
+        left: -130%
+    }
+    100% {
+        left: 130%
+    }
+}
 
+.default {
+    background: #fff6c5;
+    color: black;
+    outline: blueviolet;
 }
 
 .red {
     background: red;
+}
+
+.button {
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+    cursor: pointer;
 }
