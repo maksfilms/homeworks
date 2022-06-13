@@ -1,0 +1,24 @@
+.prejunior {
+    color: cornflowerblue;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.junior {
+    color: gold;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.juniorplus {
+    color: darkcyan;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.magicButton {
+    background-color: chocolate;
+    margin: 5px;
+    padding: 5px;
+    border: black solid 1px;
+}
